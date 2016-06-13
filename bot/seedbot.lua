@@ -224,6 +224,13 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
+    "plugins",
+    "add_bot",
+    "addplug",
+    "Lock_username",
+    "info",
+    "filtering",
+    "lockfwd",
     "admin"
     },
     sudo_users = {201707431},--Sudo users
