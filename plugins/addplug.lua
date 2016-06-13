@@ -18,3 +18,5 @@ local function run(msg, matches)
   },
   run = run
 }
+
+end
