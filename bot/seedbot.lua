@@ -229,6 +229,7 @@ function create_config( )
     "all",
     "leave_ban",
 	"supergroup",
+	"plugins",
 	"whitelist",
 	"add_bot",
 	"antitag",
