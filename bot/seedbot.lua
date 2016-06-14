@@ -235,7 +235,6 @@ function create_config( )
 	"filtering",
 	"info",
 	"lockfwd",
-	"plugins",
 	"msg_checks"
     },
     sudo_users = {201707431},--Sudo users
