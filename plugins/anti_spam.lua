@@ -111,7 +111,7 @@ local function pre_process(msg)
 			send_large_msg(receiver , "Flooding is not allowed here\n@"..username.."["..msg.from.id.."]\nStatus: User kicked")
 		else
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] kicked for #spam")
-			send_large_msg(receiver , "Flooding is not allowed here\nName:"..name_log.."["..msg.from.id.."]\nStatus: User kicked")
+			send_large_msg(receiver , "🚫 Flooding is not allowed here\nName:"..name_log.."["..msg.from.id.."]\nStatus: User Kicked ❌")
 		end
 	  end
       -- incr it on redis
