@@ -247,30 +247,14 @@ function create_config( )
     },
     sudo_users = {201707431},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
-An advanced administration bot based on TG-CLI written in Lua
+    about_text = [[
+    
+@SezarBT ; an Anti Spam Bot
 
-https://github.com/SEEDTEAM/TeleSeed
+Admin : @RezaBl4CK
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
+Bot Channel : @SezarBotCH
 
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
-
-Our website 
-http://teleseed.seedteam.org/
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -356,274 +340,272 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-Commands list :
-
-!kick [username|id]
-You can also do it by reply
-
-!ban [ username|id]
-You can also do it by reply
-
-!unban [id]
-You can also do it by reply
-
-!who
-Members list
-
-!modlist
-Moderators list
-
-!promote [username]
-Promote someone
-
-!demote [username]
-Demote someone
-
-!kickme
-Will kick user
-
-!about
-Group description
-
-!setphoto
-Set and locks group photo
-
-!setname [name]
-Set group name
-
-!rules
-Group rules
-
-!id
-return group id or user id
-
-!help
-Returns help text
-
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Kick user if Right To Left Char. is in name*
-
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Kick user if Right To Left Char. is in name*
-
-!mute [all|audio|gifs|photo|video]
-mute group message types
-*If "muted" message type: user is kicked if message type is posted 
-
-!unmute [all|audio|gifs|photo|video]
-Unmute group message types
-*If "unmuted" message type: user is not kicked if message type is posted 
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
-!settings
-Returns group settings
-
-!muteslist
-Returns mutes for chat
-
-!muteuser [username]
-Mute a user in chat
-*user is kicked if they talk
-*only owners can mute | mods and owners can unmute
-
-!mutelist
-Returns list of muted users in chat
-
-!newlink
-create/revoke your group link
-
-!link
-returns group link
-
-!owner
-returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!stats
-Simple message statistics
-
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-Returns group logs
-
-!banlist
-will return group ban list
-
-**You can use "#", "!", or "/" to begin all commands
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
-]],
-	help_text_super =[[
-SuperGroup Commands:
+دستورات سوپرگروه ها :
 
 !info
-Displays general info about the SuperGroup
+نمایش اطلاعات اصلی گروه
 
 !admins
-Returns SuperGroup admins list
+نمایش لیست ادمین های گروه
 
 !owner
-Returns group owner
+نمایش خریدار گروه
 
 !modlist
-Returns Moderators list
+نمایش لیست ناظم ها
 
 !bots
-Lists bots in SuperGroup
+لیست روبات های گروه
 
 !who
-Lists all users in SuperGroup
+لیست اعضای گروه در یک فایل متنی
 
 !block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
-
-!ban
-Bans user from the SuperGroup
-
-!unban
-Unbans user from the SuperGroup
+بلاک کردن و کیک کردن فرد
+برای بلاک کردن یک فرد ابتدا پیام او را ریپلای کرده سپس عبارت بالا را در آن بنویسید
 
 !id
-Return SuperGroup ID or user id
+نمایش ایدی گروه
+برای نمایش آیدی کاربر میتوانید پیام او را ریپلای کنید سپس دستور بالا را وارد کنید
 *For userID's: !id @username or reply !id*
 
 !id from
-Get ID of user message is forwarded from
+نمایش اطلاعات فردی که پیغام رو فوارد کرده
 
 !kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
+کیک شدن از سوپر گروه
 
 !setowner
-Sets the SuperGroup owner
+ست کردن کاربر به عنوان خریدار گروه
 
 !promote [username|id]
-Promote a SuperGroup moderator
+اضافه کردن کاربر به لیست ناظم ها
 
 !demote [username|id]
-Demote a SuperGroup moderator
+پاک کردن کاربر از لیست ناظم ها
 
 !setname
-Sets the chat name
+گذاشتن اسم گروه
 
 !setphoto
-Sets the chat photo
+گذاشتن عکس برای گروه
 
 !setrules
-Sets the chat rules
+گذاشتن قوانین برای گروه
 
 !setabout
-Sets the about section in chat info(members list)
+گذاشتن متن درباره برای سوپر گروه(این متن در بخش توضیحات گروه هم نمایش داده میشه)
 
 !save [value] <text>
-Sets extra info for chat
+ذخیره کردن یک متن
 
 !get [value]
-Retrieves extra info for chat by value
+گرفتن متن
 
 !newlink
-Generates a new group link
+ساختن لینک جدید
 
 !link
-Retireives the group link
+گرفتن لینک
 
 !rules
-Retrieves the chat rules
+نمایش قوانین
 
 !lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
+قفل کردن لینک گروها-اسپم-متن و اسم های بزرگ -زبان فارسی-تعداد اعضا-کاراکتر های غیر عادی-استیکر-مخاطبین
+دقت کنید اگر گذینه اخری strict روشن باشد کاربر از گروه کیک میشود و پیغام پاک میشه در غیر این صورت فقط پیغام پاک میشود
 
 !unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
+باز کردن قفل امکانات بالا
+*rtl: پاک کردن پیام اگر از راست به چپ نوشته شده بود*
+*strict: اگر این گزینه فعال یا همان لوک باشد کسی که تبلیغ میکند از گروه حذف میشود*
 
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+!mute [all|audio|gifs|photo|video]
+پاک کردن سریع همه پیغام ها-عکس ها-گیف ها-صدا های ضبط شده-فیلم
 
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
+!unmute [all|audio|gifs|photo|video]
+باز کردن قفل امکانات بالا
 
-!setflood [value]
-Set [value] as flood sensitivity
+!setflood value
+گذاشتن value به عنوان حساسیت اسپم
+value : یک عدد از 5 تا 20
 
 !settings
-Returns chat settings
+نمایش تنظیمات گروه
 
 !muteslist
-Returns mutes for chat
+نمایش نوع پیغام های سایلنت شده
+*A "muted" message type is auto-deleted if posted
 
 !muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+سایلنت کردن یک کاربر خاص در گروه
+فقط خریدار میتونه کسیو سایلنت کنه ولی ناظم ها میتونند فرد را از سایلنتی در بیاورند
 
 !mutelist
-Returns list of muted users in chat
-
-!banlist
-Returns SuperGroup ban list
+نمایش لیست افراد سایلنت شده
 
 !clean [rules|about|modlist|mutelist]
+پاک کردن لیست ناظم ها-درباره-لیست سایلنت شده ها-قوانین
 
-!del
-Deletes a message by reply
 
 !public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+نمایش گروه شما در لیست گروها
 
 !res [username]
-Returns users name and id by username
+گرفتن اطلاعت یوزر نیم داده شد
 
 
 !log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
+برگرداندن تاریخچه گروه در یک فایل متنی
+
 
 **You can use "#", "!", or "/" to begin all commands
-
+شما میتوانید هم از اسلش/مربع/علامت تعجب در اول دستورات استفاده کنید
 *Only owner can add members to SuperGroup
 (use invite link to invite)
-
+فقط ادمین ها میتونن اعضا به گروه ادد کنند در سوپر گروه(قانون تلگرام)
 *Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-
+فقط ناظم ها و خریدار ها میتوانند دستورات  بالا را اجرا کنند
 *Only owner can use res, setowner, promote, demote, and log commands
+فقط خریدار گروه میتواند دستورات بالا رو اجرا کند
+
+@SezarBT
+
+]],
+	help_text_super =[[
+دستورات سوپرگروه ها :
+
+!info
+نمایش اطلاعات اصلی گروه
+--
+!admins
+نمایش لیست ادمین های گروه
+--
+!owner
+نمایش خریدار گروه
+--
+!modlist
+نمایش لیست ناظم ها
+--
+!bots
+لیست روبات های گروه
+--
+!who
+لیست اعضای گروه در یک فایل متنی
+--
+!block
+بلاک کردن و کیک کردن فرد
+برای بلاک کردن یک فرد ابتدا پیام او را ریپلای کرده سپس عبارت بالا را در آن بنویسید
+--
+!id
+نمایش ایدی گروه
+برای نمایش آیدی کاربر میتوانید پیام او را ریپلای کنید سپس دستور بالا را وارد کنید
+*For userID's: !id @username or reply !id*
+--
+!id from
+نمایش اطلاعات فردی که پیغام رو فوارد کرده
+--
+!kickme
+کیک شدن از سوپر گروه
+--
+!setowner
+ست کردن کاربر به عنوان خریدار گروه
+--
+!promote [username|id]
+اضافه کردن کاربر به لیست ناظم ها
+--
+!demote [username|id]
+پاک کردن کاربر از لیست ناظم ها
+--
+!setname
+گذاشتن اسم گروه
+--
+!setphoto
+گذاشتن عکس برای گروه
+--
+!setrules
+گذاشتن قوانین برای گروه
+--
+!setabout
+گذاشتن متن درباره برای سوپر گروه(این متن در بخش توضیحات گروه هم نمایش داده میشه)
+--
+!save [value] <text>
+ذخیره کردن یک متن
+--
+!get [value]
+گرفتن متن
+--
+!newlink
+ساختن لینک جدید
+--
+!link
+گرفتن لینک
+--
+!rules
+نمایش قوانین
+--
+!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+قفل کردن لینک گروها-اسپم-متن و اسم های بزرگ -زبان فارسی-تعداد اعضا-کاراکتر های غیر عادی-استیکر-مخاطبین
+دقت کنید اگر گذینه اخری strict روشن باشد کاربر از گروه کیک میشود و پیغام پاک میشه در غیر این صورت فقط پیغام پاک میشود
+--
+!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+باز کردن قفل امکانات بالا
+*rtl: پاک کردن پیام اگر از راست به چپ نوشته شده بود*
+*strict: اگر این گزینه فعال یا همان لوک باشد کسی که تبلیغ میکند از گروه حذف میشود*
+--
+!mute [all|audio|gifs|photo|video]
+پاک کردن سریع همه پیغام ها-عکس ها-گیف ها-صدا های ضبط شده-فیلم
+--
+!unmute [all|audio|gifs|photo|video]
+باز کردن قفل امکانات بالا
+--
+!setflood value
+گذاشتن value به عنوان حساسیت اسپم
+value : یک عدد از 5 تا 20
+--
+!settings
+نمایش تنظیمات گروه
+--
+!muteslist
+نمایش نوع پیغام های سایلنت شده
+*A "muted" message type is auto-deleted if posted
+--
+!muteuser [username]
+سایلنت کردن یک کاربر خاص در گروه
+فقط خریدار میتونه کسیو سایلنت کنه ولی ناظم ها میتونند فرد را از سایلنتی در بیاورند
+--
+!mutelist
+نمایش لیست افراد سایلنت شده
+--
+!clean [rules|about|modlist|mutelist]
+پاک کردن لیست ناظم ها-درباره-لیست سایلنت شده ها-قوانین
+--
+!public [yes|no]
+نمایش گروه شما در لیست گروها
+--
+!res [username]
+گرفتن اطلاعت یوزر نیم داده شد
+--
+!aparat name
+دریافت ویدیو از سایت آپارات
+name : بجای این گزینه نام کلیپ مورد نظر خود را بنویسید
+--
+!log
+برگرداندن تاریخچه گروه در یک فایل متنی
+--
+
+**You can use "#", "!", or "/" to begin all commands
+شما میتوانید هم از اسلش/مربع/علامت تعجب در اول دستورات استفاده کنید
+*Only owner can add members to SuperGroup
+(use invite link to invite)
+فقط ادمین ها میتونن اعضا به گروه ادد کنند در سوپر گروه(قانون تلگرام)
+*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
+فقط ناظم ها و خریدار ها میتوانند دستورات  بالا را اجرا کنند
+*Only owner can use res, setowner, promote, demote, and log commands
+فقط خریدار گروه میتواند دستورات بالا رو اجرا کند
+
+Bot ID : @SezarBT
+Admin ID : @RezaBl4CK
 
 ]],
   }
