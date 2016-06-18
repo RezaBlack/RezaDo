@@ -441,8 +441,9 @@ local function run(msg, matches)
 			local user = redis:hgetall(uhash)
 			local um_hash = 'msgs:'..msg.from.id..':'..msg.to.id
 			user_info.msgs = tonumber(redis:get(um_hash) or 0)
+		end	
 			--icon & rank ------------------------------------------------------------------------------------------------
-			if tonumber(msg.from.id) == 122774063 then
+			if tonumber(msg.from.id) == 112179525 then
 				userrank = "Master ⭐⭐⭐⭐"
 				send_document("chat#id"..msg.to.id,"umbrella/stickers/master.webp", ok_cb, false)
 			elseif is_sudo(msg) then
