@@ -38,11 +38,3 @@ luac.out
 *.i*86
 *.x86_64
 *.hex
-
-#TeleSeed Data
-data/*.*
-data/photos/*.*
-data/tmp/*.*
-!data/tmp/.gitkeep
-!data/photos/.gitkeep
-!data/.gitkeep
