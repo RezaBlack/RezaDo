@@ -233,14 +233,21 @@ function create_config( )
 	"whitelist",
 	"add_bot",
 	"rmsg",
-	"lock_reply",
+	"expire",
 	"aparat",
 	"getplug",
 	"azan",
 	"GPS",
+	"nicewrite",
+	"tagall",
+	"wiki",
+	"joke",
+	"QR_Code"
+	"hackernews"
 	"Stats",
 	"botphoto",
 	"filtering",
+	"linkpv",
 	"info",
 	"lockfwd",
 	"msg_checks"
@@ -249,7 +256,7 @@ function create_config( )
     moderation = {data = 'data/moderation.json'},
     about_text = [[
     
-@SezarBT ; an Anti Spam Bot
+@SezarBT ; PowerFull Anti Spam Bot
 
 Admin : @RezaBl4CK
 
